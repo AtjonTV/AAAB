@@ -1,0 +1,16 @@
+{
+    "blacklist":[
+        {
+            "name":"NexusMods_Client",
+            "uuid":"65a6a7bf-0ade-44ce-9b8a-74f293894378",
+            "reason":"You have been caught cheating using 'NexusMods_Client v2 Emerald Edition'"
+        }
+    ],
+    "whitelist":[
+        {
+            "name":"AtjonTV",
+            "uuid":"286f25df-db57-4050-91d7-a91d59ec4fed",
+            "reason":"You are the create of the plugin, you shouln't get autobanned :D"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+This is the Database for AAAB.
+
+I will create a formular to commit hacker, to commit a hacker you will need:
+    Name of the player
+    UUID of the player (copy the first one showen by namemc.com/profile/<playername>)
+    Readson why he shoud get in the blacklist
+    Proof for the reason (best way will be a video)
