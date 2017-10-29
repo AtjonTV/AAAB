@@ -27,9 +27,7 @@ public class Checker {
 					
 					// if the tmp folder does not exist create
 					if(!M_FileSystem.Exists(E_FolderFile.DIRECTORY, Main.TEMP_ROOT))
-					{
 						M_FileSystem.Create(E_FolderFile.DIRECTORY, Main.TEMP_ROOT);
-					}
 					
 					// IF DB VERSION exists do work else create
 					if(M_FileSystem.Exists(E_FolderFile.FILE, Main.DB_VERSION))
@@ -55,7 +53,8 @@ public class Checker {
 						// compare if the existing version is older then the new, if true download the new version;
 						if(verid_n > verid_o)
 						{
-							M_Download.Download(new_version.getDatabase(), Main.DBS_ROOT+"database_"+new_version.getVersion()+".json");
+							Main.DB_NEWEST = Main.DBS_ROOT+"database_"+new_version.getVersion()+".json";
+							M_Download.Download(new_version.getDatabase(), Main.DB_NEWEST);
 						}
 						else // Otherwise everything is ok and good to go
 							break;

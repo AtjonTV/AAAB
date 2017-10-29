@@ -11,6 +11,8 @@ package at.atjontv.minecraft.aaab;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import at.atjontv.minecraft.aaab.Game.Listeners;
+
 public class Main extends JavaPlugin{
 		
 	public static String FILE_ROOT = "plugins/AAAB/";
@@ -19,10 +21,12 @@ public class Main extends JavaPlugin{
 	public static String DBS_ROOT = DB_ROOT+"dbs/";
 	public static String DB_VERSION = DB_ROOT+"version.json";
 	public static String DB_FILE = DBS_ROOT+"database.json";
+	public static String DB_NEWEST = "";
 	
 	@Override
 	public void onEnable() {
 		new Checker();
+		new Listeners(this);
 	}
 	
 }
