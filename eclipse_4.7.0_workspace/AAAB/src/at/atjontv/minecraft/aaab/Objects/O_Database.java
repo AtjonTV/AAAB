@@ -1,5 +1,5 @@
 package at.atjontv.minecraft.aaab.Objects;
 
-public class DatabaseObj {
+public class O_Database {
 
 }

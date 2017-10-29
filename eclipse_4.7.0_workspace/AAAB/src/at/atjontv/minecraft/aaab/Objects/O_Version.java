@@ -1,11 +1,11 @@
 package at.atjontv.minecraft.aaab.Objects;
 
-public class VersionObj {
+public class O_Version {
 
 	protected String version;
 	protected String database;
 
-	public VersionObj(String version, String database) {
+	public O_Version(String version, String database) {
 		this.version = version;
 		this.database = database;
 	}

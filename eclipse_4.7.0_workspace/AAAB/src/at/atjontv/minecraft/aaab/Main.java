@@ -1,5 +1,14 @@
 package at.atjontv.minecraft.aaab;
 
+/*
+ * This software is licensed under OSPL (Open Source Project License Version 1.1 by ATVG-Studios)
+ * [ License: http://atvg-studios.at/OSPLv1.1 ]
+ * 
+ * 
+ * 	Copyright 2015-2017 ATVG-Studios/AtjonTV (Thomas Obernosterer)
+ * 
+ */
+
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin{

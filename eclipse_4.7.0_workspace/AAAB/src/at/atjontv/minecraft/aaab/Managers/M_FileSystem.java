@@ -9,11 +9,11 @@ import java.nio.file.StandardCopyOption;
 
 import at.atjontv.minecraft.aaab.Enums.*;
 
-public class FileSystem_Manager {
+public class M_FileSystem {
 
-	public static boolean Exists(FileSystem_TypeEnum type, String name)
+	public static boolean Exists(E_FolderFile type, String name)
 	{
-		if(type == FileSystem_TypeEnum.FILE)
+		if(type == E_FolderFile.FILE)
 		{
 			File f = new File(name);
 			if(f.exists() && !f.isDirectory())
@@ -21,7 +21,7 @@ public class FileSystem_Manager {
 			else
 				return false;
 		}
-		else if (type == FileSystem_TypeEnum.DIRECTORY)
+		else if (type == E_FolderFile.DIRECTORY)
 		{
 			File f = new File(name);
 			if(f.exists() && f.isDirectory())
@@ -33,9 +33,9 @@ public class FileSystem_Manager {
 			return false;
 	}
 	
-	public static boolean Create(FileSystem_TypeEnum type, String name)
+	public static boolean Create(E_FolderFile type, String name)
 	{
-		if(type == FileSystem_TypeEnum.FILE && !Exists(type, name))
+		if(type == E_FolderFile.FILE && !Exists(type, name))
 		{
 			File f = new File(name);
 			try
@@ -50,7 +50,7 @@ public class FileSystem_Manager {
 				er.printStackTrace();
 			}
 		}
-		else if (type == FileSystem_TypeEnum.DIRECTORY && !Exists(type, name))
+		else if (type == E_FolderFile.DIRECTORY && !Exists(type, name))
 		{
 			Path path = Paths.get(name);
 			try
@@ -71,9 +71,9 @@ public class FileSystem_Manager {
 		return false;
 	}
 	
-	public static boolean Move(FileSystem_TypeEnum type, String source, String target)
+	public static boolean Move(E_FolderFile type, String source, String target)
 	{
-		if(type == FileSystem_TypeEnum.FILE && Exists(type, source) && !Exists(type, target))
+		if(type == E_FolderFile.FILE && Exists(type, source) && !Exists(type, target))
 		{
 			try {
 				Files.move(Paths.get(source), Paths.get(target), StandardCopyOption.REPLACE_EXISTING);
@@ -85,7 +85,7 @@ public class FileSystem_Manager {
 				e.printStackTrace();
 			}
 		}
-		else if (type == FileSystem_TypeEnum.DIRECTORY && Exists(type, source) && !Exists(type, target))
+		else if (type == E_FolderFile.DIRECTORY && Exists(type, source) && !Exists(type, target))
 		{
 			try {
 				Files.move(Paths.get(source), Paths.get(target), StandardCopyOption.REPLACE_EXISTING);
@@ -102,9 +102,9 @@ public class FileSystem_Manager {
 		return false;
 	}
 
-	public static boolean Delete(FileSystem_TypeEnum type, String name)
+	public static boolean Delete(E_FolderFile type, String name)
 	{
-		if(type == FileSystem_TypeEnum.FILE)
+		if(type == E_FolderFile.FILE)
 		{
 			try
 			{
@@ -120,7 +120,7 @@ public class FileSystem_Manager {
 				er.printStackTrace();
 			}
 		}
-		else if (type == FileSystem_TypeEnum.DIRECTORY)
+		else if (type == E_FolderFile.DIRECTORY)
 		{
 			try
 			{
