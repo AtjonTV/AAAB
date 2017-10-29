@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-8-openjdk-amd64"/>
-	<classpathentry kind="lib" path="/media/atjontv/ECEA6664EA662B521/APM/_java/AAAB/git-repo/libs/spigot_1112.jar"/>
-	<classpathentry kind="lib" path="/media/atjontv/ECEA6664EA662B521/APM/_java/AAAB/git-repo/libs/gson_282.jar"/>
-	<classpathentry kind="output" path="bin"/>
-</classpath>

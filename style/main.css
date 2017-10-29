@@ -1,0 +1,99 @@
+/*
+    This site was written by ATVG-Studios/AtjonTV
+
+    This Software is Licensed under ATVG-Studios's OSPLv1.1
+    [ http://atvg-studios.at/OSPLv1.1 ]
+
+    Copyright 2015-2017 ATVG-Studios
+*/
+
+.center
+{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.spacer
+{
+    padding: 10px;
+}
+
+.cardX
+{
+    width: 600px;
+    height: 500px;
+}
+
+.cardX-m
+{
+    width: 800px;
+    height: 500px;
+}
+
+.cardX-l
+{
+    width: 800px;
+    height: 900px;
+}
+
+.footer .footer-card
+{
+    border-radius: 0px;
+}
+
+.footer .footer-card .footer-text
+{
+    color: white;
+}
+
+.footer .footer-card .footer-text:hover
+{
+    color: white;
+}
+
+.footer .footer-card .footer-link
+{
+    color: lightgreen;
+    text-decoration: none;
+}
+
+.footer .footer-card .footer-link:hover
+{
+    color: lightgreen;
+    text-decoration: underline;
+}
+
+.footer-b
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-b .footer-card
+{
+    border-radius: 0px;
+}
+
+.footer-b .footer-card .footer-text
+{
+    color: white;
+}
+
+.footer-b .footer-card .footer-text:hover
+{
+    color: white;
+}
+
+.footer-b .footer-card .footer-link
+{
+    color: lightgreen;
+    text-decoration: none;
+}
+
+.footer-b .footer-card .footer-link:hover
+{
+    color: lightgreen;
+    text-decoration: underline;
+}
