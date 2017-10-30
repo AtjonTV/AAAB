@@ -15,6 +15,8 @@ import at.atjontv.minecraft.aaab.Game.Listeners;
 
 public class Main extends JavaPlugin{
 		
+	//public static String GIT = "https://raw.githubusercontent.com/TheNightRider/AAAB/db/version.json";
+	public static String GIT = "https://raw.githubusercontent.com/AtjonTV/AAAB/db/version.json";
 	public static String FILE_ROOT = "plugins/AAAB/";
 	public static String TEMP_ROOT = FILE_ROOT+"tmp/";
 	public static String DB_ROOT = FILE_ROOT+"db/";

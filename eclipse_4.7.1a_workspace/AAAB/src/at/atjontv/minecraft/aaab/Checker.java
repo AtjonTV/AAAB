@@ -38,8 +38,7 @@ public class Checker {
 						// otherwise move the existing version to the tmp folder
 						M_FileSystem.Move(E_FolderFile.FILE, Main.DB_VERSION, Main.TEMP_ROOT+"version_old.json");
 						// download the newest version file
-						M_Download.Download("https://raw.githubusercontent.com/AtjonTV/AAAB/db/version.json",
-								Main.DB_VERSION);
+						M_Download.Download(Main.GIT, Main.DB_VERSION);
 						// make a manager object
 						M_JSON mjs = new M_JSON();
 						// get version objects from json files
@@ -63,8 +62,7 @@ public class Checker {
 					}
 					else
 					{
-						M_Download.Download("https://raw.githubusercontent.com/AtjonTV/AAAB/db/version.json",
-								Main.DB_VERSION);
+						M_Download.Download(Main.GIT, Main.DB_VERSION);
 					}
 				}
 				else
