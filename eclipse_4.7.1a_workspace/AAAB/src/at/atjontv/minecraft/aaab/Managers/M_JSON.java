@@ -4,7 +4,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -48,22 +47,6 @@ public class M_JSON {
 	{
 		if(!M_FileSystem.Exists(E_FolderFile.FILE, file))
 			return null;
-		
-        JSONParser parser = new JSONParser();
-        try {
-        	O_Database data;
-            Object obj = parser.parse(new FileReader(file));
-            JSONObject jsonObject = (JSONObject) obj;
-            String[] blacklist = (String[]) jsonObject.get("blacklist");
-            data = new O_Database(blacklist, null);
-            return data;
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }        
 		return null;
 	}
 	

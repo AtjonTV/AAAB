@@ -50,10 +50,12 @@ public class Checker {
 						int verid_o = Integer.parseInt(old_version.getVersion(), 16 );
 						int verid_n = Integer.parseInt(new_version.getVersion(), 16 );
 						
+						// Set the newest version
+						Main.DB_NEWEST = Main.DBS_ROOT+"database_"+new_version.getVersion()+".json";
+						
 						// compare if the existing version is older then the new, if true download the new version;
 						if(verid_n > verid_o)
 						{
-							Main.DB_NEWEST = Main.DBS_ROOT+"database_"+new_version.getVersion()+".json";
 							M_Download.Download(new_version.getDatabase(), Main.DB_NEWEST);
 						}
 						else // Otherwise everything is ok and good to go
