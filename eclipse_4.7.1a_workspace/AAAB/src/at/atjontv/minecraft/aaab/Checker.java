@@ -6,10 +6,16 @@ import at.atjontv.minecraft.aaab.Objects.O_Version;
 
 public class Checker {
 		
-	public Checker()
+	public Checker(boolean run)
 	{
 		System.out.println("Module Checker in at.atjontv.minecraft.aaab enabled.");
 		
+		if(run)
+			DoCheck();
+	}
+	
+	public void DoCheck()
+	{
 		/*
 		 * Permanent Loop
 		 */
@@ -38,8 +44,7 @@ public class Checker {
 						// otherwise move the existing version to the tmp folder
 						M_FileSystem.Move(E_FolderFile.FILE, Main.DB_VERSION, Main.TEMP_ROOT+"version_old.json");
 						// download the newest version file
-						M_Download.Download("https://raw.githubusercontent.com/AtjonTV/AAAB/db/version.json",
-								Main.DB_VERSION);
+						M_Download.Download(Main.GIT, Main.DB_VERSION);
 						// make a manager object
 						M_JSON mjs = new M_JSON();
 						// get version objects from json files
@@ -59,12 +64,14 @@ public class Checker {
 							M_Download.Download(new_version.getDatabase(), Main.DB_NEWEST);
 						}
 						else // Otherwise everything is ok and good to go
+						{
+							System.out.println("[AAAB::Checker] Database is up to date.");
 							break;
+						}
 					}
 					else
 					{
-						M_Download.Download("https://raw.githubusercontent.com/AtjonTV/AAAB/db/version.json",
-								Main.DB_VERSION);
+						M_Download.Download(Main.GIT, Main.DB_VERSION);
 					}
 				}
 				else
