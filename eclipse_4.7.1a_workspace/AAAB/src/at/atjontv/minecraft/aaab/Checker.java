@@ -6,10 +6,16 @@ import at.atjontv.minecraft.aaab.Objects.O_Version;
 
 public class Checker {
 		
-	public Checker()
+	public Checker(boolean run)
 	{
 		System.out.println("Module Checker in at.atjontv.minecraft.aaab enabled.");
 		
+		if(run)
+			DoCheck();
+	}
+	
+	public void DoCheck()
+	{
 		/*
 		 * Permanent Loop
 		 */
@@ -59,6 +65,8 @@ public class Checker {
 						}
 						else // Otherwise everything is ok and good to go
 							break;
+						
+						System.out.println("[AAAB::Checker] Database is up to date.");
 					}
 					else
 					{
