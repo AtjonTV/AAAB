@@ -64,9 +64,10 @@ public class Checker {
 							M_Download.Download(new_version.getDatabase(), Main.DB_NEWEST);
 						}
 						else // Otherwise everything is ok and good to go
+						{
+							System.out.println("[AAAB::Checker] Database is up to date.");
 							break;
-						
-						System.out.println("[AAAB::Checker] Database is up to date.");
+						}
 					}
 					else
 					{

@@ -26,6 +26,7 @@ public class Listeners implements Listener{
 			System.err.print("Error in at.atjontv.minecraft.aaab.Game.Listeners.java:23 [Given object is null]");
 		else
 		{
+			// Loop durch das 2D array welches die daten der blacklist enthält
 			count++;
 			for(int i = 0; i < this._users.length; i++)
 			{
@@ -37,6 +38,7 @@ public class Listeners implements Listener{
 				}
 			}
 			
+			// Nach allen 30 joins soll die config geupdatet werden.
 			if(count >= 30)
 			{
 				Checker c = new Checker(false);
