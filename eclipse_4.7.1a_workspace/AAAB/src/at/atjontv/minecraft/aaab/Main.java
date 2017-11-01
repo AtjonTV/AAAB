@@ -12,6 +12,7 @@ package at.atjontv.minecraft.aaab;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import at.atjontv.minecraft.aaab.Game.Listeners;
+import at.thenightrider.Commands.Commander;
 
 public class Main extends JavaPlugin{
 		
@@ -27,10 +28,14 @@ public class Main extends JavaPlugin{
 	public static String DB_FILE = DBS_ROOT+"database.json";
 	public static String DB_NEWEST = "";
 	
+	protected static char paragraph = (char)167;
+	public static String BUKKIT_COLOR_BEGIN = paragraph+"";
+	public static String PLUGIN_PREFIX = BUKKIT_COLOR_BEGIN+"7["+BUKKIT_COLOR_BEGIN+"6";
+	
 	@Override
 	public void onEnable() {
 		new Checker(true);
 		new Listeners(this);
+		(new Commander(this)).Enable();
 	}
-	
 }

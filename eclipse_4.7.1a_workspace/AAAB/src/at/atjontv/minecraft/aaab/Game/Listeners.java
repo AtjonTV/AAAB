@@ -16,7 +16,7 @@ public class Listeners implements Listener{
 	public Listeners(Main plugin)
 	{
 		plugin.getServer().getPluginManager().registerEvents(this, plugin);
-		this._users = at.thenightrider.json.Manager.getBlacklist(Main.DB_NEWEST);
+		this._users = at.thenightrider.Json.Manager.getBlacklist(Main.DB_NEWEST);
 	}
 	
 	@EventHandler

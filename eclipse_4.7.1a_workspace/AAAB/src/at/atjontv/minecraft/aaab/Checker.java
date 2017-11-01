@@ -11,10 +11,10 @@ public class Checker {
 		System.out.println("Module Checker in at.atjontv.minecraft.aaab enabled.");
 		
 		if(run)
-			DoCheck();
+			 DoCheck();
 	}
 	
-	public void DoCheck()
+	public boolean DoCheck()
 	{
 		/*
 		 * Permanent Loop
@@ -66,7 +66,7 @@ public class Checker {
 						else // Otherwise everything is ok and good to go
 						{
 							System.out.println("[AAAB::Checker] Database is up to date.");
-							break;
+							return true;
 						}
 					}
 					else
