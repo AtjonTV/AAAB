@@ -1,4 +1,8 @@
 main: at.atjontv.minecraft.aaab.Main
 name: AltAccountAutoBan
+<<<<<<< HEAD
 version: 1.0_b0x2C
+=======
+version: 1.0_b0x29
+>>>>>>> 54b5a263949326910a7fa9a578b83c1582d3557d
 authors: [AtjonTV, TheNightRider]
