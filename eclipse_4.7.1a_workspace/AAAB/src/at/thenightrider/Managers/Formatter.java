@@ -3,6 +3,15 @@ package at.thenightrider.Managers;
 import at.atjontv.minecraft.aaab.Main;
 import at.thenightrider.Enums.E_Colors;
 
+/*
+ * Last edited by AtjonTV
+ * 5th November 2017 at 1pm
+ */
+
+/**
+ * Formatter should not be used due to the recreated enum. 
+ */
+@Deprecated
 public class Formatter {
 
 	public Formatter()

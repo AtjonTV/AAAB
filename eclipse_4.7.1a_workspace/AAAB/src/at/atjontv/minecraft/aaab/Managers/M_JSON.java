@@ -9,8 +9,13 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import at.atjontv.minecraft.aaab.Enums.E_FolderFile;
-import at.atjontv.minecraft.aaab.Objects.O_Database;
+import at.atjontv.minecraft.aaab.Objects.*;
 import at.atjontv.minecraft.aaab.Objects.O_Version;
+
+/*
+ * Last edited by AtjonTV
+ * 5th November 2017 at 1pm
+ */
 
 public class M_JSON {
 
@@ -43,6 +48,10 @@ public class M_JSON {
 		return null;
 	}
 	
+	/**
+	 * Currently Deprecated due to the 'String[][] Json.Manager.getBlacklist(String file)' method 
+	 */
+	@Deprecated
 	public O_Database makeDatabase(String file)
 	{
 		if(!M_FileSystem.Exists(E_FolderFile.FILE, file))

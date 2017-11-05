@@ -13,6 +13,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import at.atjontv.minecraft.aaab.Game.Listeners;
 import at.thenightrider.Commands.Commander;
+import at.thenightrider.Enums.E_Colors;
 
 public class Main extends JavaPlugin{
 		
@@ -30,7 +31,7 @@ public class Main extends JavaPlugin{
 	
 	protected static char paragraph = (char)167;
 	public static String BUKKIT_COLOR_BEGIN = paragraph+"";
-	public static String PLUGIN_PREFIX = BUKKIT_COLOR_BEGIN+"7["+BUKKIT_COLOR_BEGIN+"6";
+	public static String PLUGIN_PREFIX = E_Colors.GRAY.toString()+"["+E_Colors.GOLD.toString()+"AAAB"+E_Colors.GRAY.toString()+"]";
 	
 	@Override
 	public void onEnable() {
