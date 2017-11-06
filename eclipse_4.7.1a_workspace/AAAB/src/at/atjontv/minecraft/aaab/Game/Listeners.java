@@ -15,6 +15,7 @@ public class Listeners implements Listener{
 	
 	public Listeners(Main plugin)
 	{
+		System.out.println("Module 'Listeners' in at.atjontv.minecraft.aaab.Game enabled.");
 		plugin.getServer().getPluginManager().registerEvents(this, plugin);
 		this._users = at.thenightrider.Json.Manager.getBlacklist(Main.DB_NEWEST);
 		this._users = at.thenightrider.Json.Manager.getBlacklist(Main.DB_NEWEST);

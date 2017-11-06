@@ -1,5 +1,7 @@
 package at.atjontv.minecraft.aaab;
 
+import org.bukkit.Bukkit;
+
 /*
  * This software is licensed under OSPL (Open Source Project License Version 1.1 by ATVG-Studios)
  * [ License: http://atvg-studios.at/OSPLv1.1 ]
@@ -35,8 +37,27 @@ public class Main extends JavaPlugin{
 	
 	@Override
 	public void onEnable() {
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#------------------------------#");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#    Alt Account Auto Ban v2   #");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#   AAAB v2 [v"+this.getDescription().getVersion()+"]   #");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#------------------------------#");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"# AAAB by "+E_Colors.RED.toString()+"AtjonTV"+E_Colors.AQUA.toString()+" and others:  #");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"# "+E_Colors.RED.toString()+"TheNightRider,               "+E_Colors.AQUA.toString()+"#");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#------------------------------#");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#   AAAB's Official Website:   #");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#  "+E_Colors.GREEN.toString()+"http://l.beeit.org/rEKe9X"+E_Colors.AQUA.toString()+"   #");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#------------------------------#");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#     AAAB is Open Source:     #");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#  "+E_Colors.GREEN.toString()+"http://l.beeit.org/iuny38"+E_Colors.AQUA.toString()+"   #");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#------------------------------#");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"# Updates can be found on here:#");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#  "+E_Colors.GREEN.toString()+"http://l.beeit.org/lkD5KN"+E_Colors.AQUA.toString()+"   #");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#              or              #");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#  "+E_Colors.GREEN.toString()+"http://l.beeit.org/Ox1MJa"+E_Colors.AQUA.toString()+"   #");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#------------------------------#");
+		Bukkit.getConsoleSender().sendMessage(PLUGIN_PREFIX+" Checking Modules ..");
 		new Checker(true);
 		new Listeners(this);
-		(new Commander(this)).Enable();
+		new Commander(this);
 	}
 }
