@@ -19,22 +19,22 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script> 
         <!-- </INCLUDE Bootstrap 4> -->
-        <link rel="stylesheet" href="./style/main.css">
+        <link rel="stylesheet" href="../style/main.css">
     </head>
     <body>
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/about.html">What is AAAB?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/thanks.html">Thank to the Contributors</a>
+                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/about.html">What is AAAB?</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/thanks.html">Thank to the Contributors</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./api/index.html">AAAB API</a>
+                    <a class="nav-link" href="./index.html">AAAB API</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://github.com/AtjonTV/AAAB/tree/dev-1.0/">GitHub</a>
@@ -43,11 +43,18 @@
         </nav> 
         <div class="center">
             <div class="spacer"></div>
-            <h2>Alt Account Auto-Ban, the Official Website.</h2>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <div class="spacer"></div>
-            <h5>This site is still in Development.<br>(Same for the Plugin)</h5>
+            <div>
+                <h3>How to use the API?</h3>
+                <p>Make an GET Request to the page <kbd>https://atjontv.github.io/AAAB/api/api.php</kbd></p>
+                <h4>The Following requests are possible: </h4>
+                <ul>
+                    <li>(1) <kbd>https://atjontv.github.io/AAAB/api/api.php?uuid=&lt;minecraft uuid&gt;</kbd></li>
+                </ul>
+                <h4>Return values of the Requests</h4>
+                <ul>
+                    <li>(1) Returns Boolean 'success', 'blacklisted' Integer 'uuid' String 'name', 'uuid'</li>
+                </ul>
+            </div>
         </div>
         <div class="footer-b">
             <div class="spacer"></div>
