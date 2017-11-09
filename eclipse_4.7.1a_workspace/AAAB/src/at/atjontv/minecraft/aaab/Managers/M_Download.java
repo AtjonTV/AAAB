@@ -8,7 +8,12 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
 import at.atjontv.minecraft.aaab.Enums.E_FolderFile;
+import at.atjontv.minecraft.aaab.Annotations.*;
+import at.atjontv.minecraft.aaab.Annotations.UnderConstruction.Priority;
 
+@Creator(createdBy="AtjonTV", createdOn="29.10.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="09.11.2017")
+@UnderConstruction(priority = Priority.HIGH)
 public class M_Download {
 
 	public static boolean Download(String uri, String loc)

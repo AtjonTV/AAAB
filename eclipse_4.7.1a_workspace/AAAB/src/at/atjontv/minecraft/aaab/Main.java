@@ -16,7 +16,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 import at.atjontv.minecraft.aaab.Game.Listeners;
 import at.thenightrider.Commands.Commander;
 import at.thenightrider.Enums.E_Colors;
+import at.atjontv.minecraft.aaab.Annotations.*;
 
+@Creator(createdBy="AtjonTV", createdOn="29.10.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="09.11.2017")
 public class Main extends JavaPlugin{
 		
 	// die version.json welche information über  die datenbank datei gibt, muss hier angegeben werden.

@@ -9,11 +9,10 @@ import at.atjontv.minecraft.aaab.Checker;
 import at.atjontv.minecraft.aaab.Main;
 import at.thenightrider.Enums.E_Colors;
 
-/*
- * Last edited by AtjonTV
- * 5th November 2017 at 9pm
- */
+import at.atjontv.minecraft.aaab.Annotations.*;
 
+@Creator(createdBy="TheNightRider", createdOn="01.11.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="09.11.2017")
 public class Commander implements Listener{
 	
 	protected Main pluginMain;

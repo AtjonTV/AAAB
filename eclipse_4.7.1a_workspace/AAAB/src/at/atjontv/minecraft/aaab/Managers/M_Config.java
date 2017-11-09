@@ -1,10 +1,13 @@
 package at.atjontv.minecraft.aaab.Managers;
 
-import at.atjontv.minecraft.aaab.Annotations.UnderConstruction;
-import at.atjontv.minecraft.aaab.Annotations.UnderConstruction.Priority;
 import at.atjontv.minecraft.aaab.Enums.E_ConfigFileAction;
 import at.atjontv.minecraft.aaab.Objects.O_Config;
 
+import at.atjontv.minecraft.aaab.Annotations.*;
+import at.atjontv.minecraft.aaab.Annotations.UnderConstruction.Priority;
+
+@Creator(createdBy="AtjonTV", createdOn="09.11.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="09.11.2017")
 @UnderConstruction(priority = Priority.HIGH)
 public class M_Config {
 

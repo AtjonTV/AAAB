@@ -7,7 +7,10 @@ import java.io.InputStream;
 import java.util.Scanner;
 
 import org.json.JSONObject;
+import at.atjontv.minecraft.aaab.Annotations.*;
 
+@Creator(createdBy="TheNightRider", createdOn="30.10.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="09.11.2017")
 public class JsonUtils {
 
 	public static String getJsonStringFromFile(String file)

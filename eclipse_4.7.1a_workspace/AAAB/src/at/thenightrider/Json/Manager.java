@@ -2,7 +2,10 @@ package at.thenightrider.Json;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import at.atjontv.minecraft.aaab.Annotations.*;
 
+@Creator(createdBy="TheNightRider", createdOn="30.10.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="09.11.2017")
 public class Manager {
 
 	public Manager()

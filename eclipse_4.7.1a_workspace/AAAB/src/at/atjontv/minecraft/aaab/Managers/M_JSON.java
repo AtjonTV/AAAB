@@ -12,11 +12,10 @@ import at.atjontv.minecraft.aaab.Enums.E_FolderFile;
 import at.atjontv.minecraft.aaab.Objects.*;
 import at.atjontv.minecraft.aaab.Objects.O_Version;
 
-/*
- * Last edited by AtjonTV
- * 5th November 2017 at 1pm
- */
+import at.atjontv.minecraft.aaab.Annotations.*;
 
+@Creator(createdBy="AtjonTV", createdOn="29.10.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="09.11.2017")
 public class M_JSON {
 
 	public M_JSON()

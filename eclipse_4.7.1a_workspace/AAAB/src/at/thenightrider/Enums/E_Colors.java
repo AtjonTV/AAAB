@@ -1,12 +1,10 @@
 package at.thenightrider.Enums;
 
 import at.atjontv.minecraft.aaab.*;
+import at.atjontv.minecraft.aaab.Annotations.*;
 
-/*
- * Last edited by AtjonTV
- * 5th November 2017 at 1pm
- */
-
+@Creator(createdBy="TheNightRider", createdOn="01.11.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="09.11.2017")
 public enum E_Colors {
 	BLACK(Main.BUKKIT_COLOR_BEGIN+"0"),
 	DARK_BLUE(Main.BUKKIT_COLOR_BEGIN+"1"),
