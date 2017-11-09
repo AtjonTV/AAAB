@@ -1,9 +1,11 @@
 package at.atjontv.minecraft.aaab.Objects;
 
-/*
- * Last edited by AtjonTV
- * 5th November 2017 at 1pm
- */
+import at.atjontv.minecraft.aaab.Annotations.*;
+import at.atjontv.minecraft.aaab.Annotations.UnderConstruction.Priority;
+
+@Creator(createdBy="AtjonTV", createdOn="29.10.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="09.11.2017")
+@UnderConstruction(priority = Priority.HIGH)
 
 /**
  * Currently Deprecated due to the 'String[][] Json.Manager.getBlacklist(String file)' method 

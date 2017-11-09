@@ -8,12 +8,10 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import at.atjontv.minecraft.aaab.Checker;
 import at.atjontv.minecraft.aaab.Main;
 import at.thenightrider.Enums.E_Colors;
+import at.atjontv.minecraft.aaab.Annotations.*;
 
-/*
- * Last edited by AtjonTV
- * 5th November 2017 at 9pm
- */
-
+@Creator(createdBy="TheNightRider", createdOn="01.11.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="09.11.2017")
 public class Commander implements Listener{
 	
 	protected Main pluginMain;

@@ -1,12 +1,9 @@
 package at.thenightrider.Enums;
 
 import at.atjontv.minecraft.aaab.Main;
+import at.atjontv.minecraft.aaab.Annotations.*;
 
-/*
- * Last edited by AtjonTV
- * 5th November 2017 at 1pm
- */
-
+@Creator(createdBy="TheNightRider", createdOn="01.11.2017")
 public enum E_TextDecoration {
 	OBFUSCATED(Main.BUKKIT_COLOR_BEGIN+"k"),
 	BOLD(Main.BUKKIT_COLOR_BEGIN+"l"),
