@@ -8,7 +8,6 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import at.atjontv.minecraft.aaab.Checker;
 import at.atjontv.minecraft.aaab.Main;
 import at.thenightrider.Enums.E_Colors;
-
 import at.atjontv.minecraft.aaab.Annotations.*;
 
 @Creator(createdBy="TheNightRider", createdOn="01.11.2017")
