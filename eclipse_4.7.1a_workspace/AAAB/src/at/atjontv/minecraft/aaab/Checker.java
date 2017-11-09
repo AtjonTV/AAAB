@@ -1,5 +1,7 @@
 package at.atjontv.minecraft.aaab;
 
+import org.bukkit.Bukkit;
+
 import at.atjontv.minecraft.aaab.Enums.*;
 import at.atjontv.minecraft.aaab.Managers.*;
 import at.atjontv.minecraft.aaab.Objects.O_Version;
@@ -8,7 +10,7 @@ public class Checker {
 		
 	public Checker(boolean run)
 	{
-		System.out.println("Module Checker in at.atjontv.minecraft.aaab enabled.");
+		System.out.println("Module 'Checker' in at.atjontv.minecraft.aaab enabled.");
 		
 		if(run)
 			 DoCheck();
@@ -65,7 +67,7 @@ public class Checker {
 						}
 						else // Otherwise everything is ok and good to go
 						{
-							System.out.println("[AAAB::Checker] Database is up to date.");
+							Bukkit.getConsoleSender().sendMessage(Main.PLUGIN_PREFIX+" Database is up to date.");
 							return true;
 						}
 					}
