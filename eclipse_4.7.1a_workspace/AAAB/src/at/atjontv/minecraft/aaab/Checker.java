@@ -70,6 +70,7 @@ public class Checker {
 						}
 						else // Otherwise everything is ok and good to go
 						{
+							Main.DB_VERSION_STR = new_version.getVersion();
 							Bukkit.getConsoleSender().sendMessage(Main.PLUGIN_PREFIX+" Database is up to date.");
 							return true;
 						}

@@ -40,6 +40,7 @@ public class Commander implements Listener{
 			if(!p.hasPermission("aaab.admin"))
 			{
 				doit = false;
+				p.sendMessage(eu.atjontv.minecraft.aaab.LanguagePack.Lang_English.getNo_permission());
 			}
 			
 			if(doit && e.getMessage().equalsIgnoreCase((char)37+"aaab update") || e.getMessage().equalsIgnoreCase((char)37+"aaab -u"))
