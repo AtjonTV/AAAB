@@ -6,9 +6,8 @@ import at.atjontv.minecraft.aaab.Annotations.*;
 import at.atjontv.minecraft.aaab.Annotations.UnderConstruction.Priority;
 
 @Creator(createdBy="TheNightRider", createdOn="01.11.2017")
-@LastEdit(changedBy="AtjonTV", lastChanged="09.11.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="10.11.2017")
 @UnderConstruction(priority=Priority.LOW)
-@Deprecated
 public class Formatter {
 
 	public Formatter()
@@ -16,6 +15,23 @@ public class Formatter {
 		
 	}
 	
+	@Creator(createdBy="AtjonTV",createdOn="10.11.2017")
+	@LastEdit(changedBy="AtjonTV", lastChanged="10.11.2017")
+	public String varintextFormat(String text, String key, String replacement)
+	{
+		String txt = text.replace(key, replacement);
+		return txt;
+	}
+	
+	@Creator(createdBy="AtjonTV",createdOn="10.11.2017")
+	@LastEdit(changedBy="AtjonTV", lastChanged="10.11.2017")
+	public String playerintextFormat(String text, String replacement)
+	{
+		String txt = text.replace("@p", replacement);
+		return txt;
+	}
+	
+	@Deprecated
 	public String breakerFormat(String[] in, E_Colors[] colorInOrder)
 	{
 		String finalStr = "";
@@ -31,6 +47,7 @@ public class Formatter {
 		return finalStr;
 	}
 	
+	@Deprecated
 	public String getColor(E_Colors color)
 	{
 		switch(color)

@@ -8,4 +8,8 @@ import at.atjontv.minecraft.aaab.Annotations.UnderConstruction.Priority;
 @UnderConstruction(priority=Priority.SUPERHIGH)
 public class Lang_German {
 
+	protected static String no_permission = "Du hast keine berechtigung um das zu tun!";
+	protected static String db_uptodate = "Die Datenbank ist auf dem Neuesten Stand!";
+	protected static String checking_modules = "Überprüfe Module ...";
+	
 }

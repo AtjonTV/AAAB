@@ -27,8 +27,6 @@ public class FileHandle {
 		{
 			e.printStackTrace();
 		}
-		
-		System.out.println("at.thenightrider.json.FileHandle.java:27 ; Returning null after try-catch");
 		return null;
 	}
 	
