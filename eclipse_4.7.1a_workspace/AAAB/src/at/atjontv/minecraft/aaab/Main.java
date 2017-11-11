@@ -31,6 +31,7 @@ public class Main extends JavaPlugin{
 	public static String DB_ROOT = FILE_ROOT+"db/";
 	public static String DBS_ROOT = DB_ROOT+"dbs/";
 	public static String DB_VERSION = DB_ROOT+"version.json";
+	public static String DB_VERSION_STR = "";
 	public static String DB_FILE = DBS_ROOT+"database.json";
 	public static String DB_NEWEST = "";
 	

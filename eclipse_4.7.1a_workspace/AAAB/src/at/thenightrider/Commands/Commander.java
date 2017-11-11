@@ -40,6 +40,7 @@ public class Commander implements Listener{
 			if(!p.hasPermission("aaab.admin"))
 			{
 				doit = false;
+				p.sendMessage("You don't have permission to do this!");
 			}
 			
 			if(doit && e.getMessage().equalsIgnoreCase((char)37+"aaab update") || e.getMessage().equalsIgnoreCase((char)37+"aaab -u"))

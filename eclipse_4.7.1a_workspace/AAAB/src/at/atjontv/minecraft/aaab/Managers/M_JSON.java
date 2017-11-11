@@ -12,9 +12,10 @@ import at.atjontv.minecraft.aaab.Enums.E_FolderFile;
 import at.atjontv.minecraft.aaab.Objects.*;
 import at.atjontv.minecraft.aaab.Objects.O_Version;
 import at.atjontv.minecraft.aaab.Annotations.*;
+import at.atjontv.minecraft.aaab.Annotations.UnderConstruction.Priority;
 
 @Creator(createdBy="AtjonTV", createdOn="29.10.2017")
-@LastEdit(changedBy="AtjonTV", lastChanged="09.11.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="10.11.2017")
 public class M_JSON {
 
 	public M_JSON()
@@ -54,6 +55,16 @@ public class M_JSON {
 	{
 		if(!M_FileSystem.Exists(E_FolderFile.FILE, file))
 			return null;
+		return null;
+	}
+	
+	@UnderConstruction(priority=Priority.HIGH)
+	@Deprecated
+	public O_Config makeConfig(String file)
+	{
+		if(!M_FileSystem.Exists(E_FolderFile.FILE, file))
+			return null;
+		
 		return null;
 	}
 	
