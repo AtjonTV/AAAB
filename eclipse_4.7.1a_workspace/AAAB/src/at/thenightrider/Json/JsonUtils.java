@@ -10,7 +10,7 @@ import org.json.JSONObject;
 import at.atjontv.minecraft.aaab.Annotations.*;
 
 @Creator(createdBy="TheNightRider", createdOn="30.10.2017")
-@LastEdit(changedBy="AtjonTV", lastChanged="09.11.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="13.11.2017")
 public class JsonUtils {
 
 	public static String getJsonStringFromFile(String file)
@@ -23,7 +23,7 @@ public class JsonUtils {
 		try
 		{
 			Scanner scanner;
-			InputStream in = FileHandle.getInputStreamFromFile(file);
+			InputStream in = M_FileSystem.getInputStreamFromFile(file);
 			if(in == null)
 			{
 				System.err.print("Error in at.thenightrider.json.JsonUtils.java:26 [Given filestream is null]");

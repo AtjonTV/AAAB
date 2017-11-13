@@ -7,10 +7,12 @@ import org.json.JSONObject;
 
 import at.atjontv.minecraft.aaab.Main;
 import at.atjontv.minecraft.aaab.Annotations.*;
+import at.atjontv.minecraft.aaab.Annotations.Product.Types;
 import at.atjontv.minecraft.aaab.Annotations.UnderConstruction.Priority;
 
+@Product(type=Types.CLASS, name="M_Config")
 @Creator(createdBy="AtjonTV", createdOn="09.11.2017")
-@LastEdit(changedBy="AtjonTV", lastChanged="10.11.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="13.11.2017")
 @UnderConstruction(priority = Priority.HIGH)
 public class M_Config {
 
@@ -19,6 +21,9 @@ public class M_Config {
 		
 	}
 	
+	@Product(type=Types.FUNCTION, name="createConfig")
+	@Creator(createdBy="AtjonTV", createdOn="09.11.2017")
+	@LastEdit(changedBy="AtjonTV", lastChanged="13.11.2017")
 	public O_Config createConfig() {
 		
 		O_Config obj = new O_Config();
@@ -29,6 +34,9 @@ public class M_Config {
 		return obj;
 	}
 	
+	@Product(type=Types.FUNCTION, name="getConfigAsJson")
+	@Creator(createdBy="AtjonTV", createdOn="09.11.2017")
+	@LastEdit(changedBy="AtjonTV", lastChanged="13.11.2017")
 	public String getConfigAsJson(O_Config conf)
 	{
 		JSONObject obj = new JSONObject(conf);
@@ -36,6 +44,9 @@ public class M_Config {
 		return str;
 	}
 	
+	@Product(type=Types.FUNCTION, name="saveConfig")
+	@Creator(createdBy="AtjonTV", createdOn="09.11.2017")
+	@LastEdit(changedBy="AtjonTV", lastChanged="13.11.2017")
 	public void saveConfig(E_ConfigFileAction action, O_Config config)
 	{
 		if(action == E_ConfigFileAction.OPEN_OR_CRATE)

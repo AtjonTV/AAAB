@@ -8,16 +8,20 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import at.atjontv.minecraft.aaab.Checker;
 import at.atjontv.minecraft.aaab.Main;
 import at.atjontv.minecraft.aaab.Annotations.*;
+import at.atjontv.minecraft.aaab.Annotations.Product.Types;
 import at.atjontv.minecraft.aaab.Annotations.UnderConstruction.Priority;
 
+@Product(type=Types.MODULE, name="Listeners")
+@Product(type=Types.CLASS, name="Listeners")
 @Creator(createdBy="AtjonTV", createdOn="29.10.2017")
-@LastEdit(changedBy="AtjonTV", lastChanged="09.11.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="13.11.2017")
 @UnderConstruction(priority = Priority.HIGH)
 public class Listeners implements Listener{
 
 	protected String[][] _users;
 	protected int count = 0;
 	
+	@Product(type=Types.FUNCTION, name="Listeners")
 	public Listeners(Main plugin)
 	{
 		System.out.println("Module 'Listeners' in at.atjontv.minecraft.aaab.Game enabled.");
@@ -26,6 +30,7 @@ public class Listeners implements Listener{
 		this._users = at.thenightrider.Json.Manager.getBlacklist(Main.DB_NEWEST);
 	}
 	
+	@Product(type=Types.FUNCTION, name="onPlayerJoin")
 	@EventHandler
 	public void onPlayerJoin(PlayerJoinEvent e)
 	{

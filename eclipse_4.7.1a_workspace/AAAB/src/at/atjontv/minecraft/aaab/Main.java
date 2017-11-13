@@ -17,9 +17,12 @@ import at.atjontv.minecraft.aaab.Game.Listeners;
 import at.thenightrider.Commands.Commander;
 import at.thenightrider.Enums.E_Colors;
 import at.atjontv.minecraft.aaab.Annotations.*;
+import at.atjontv.minecraft.aaab.Annotations.Product.Types;
 
+@Product(type=Types.MODULE, name="Main_Module")
+@Product(type=Types.CLASS, name="Main")
 @Creator(createdBy="AtjonTV", createdOn="29.10.2017")
-@LastEdit(changedBy="AtjonTV", lastChanged="09.11.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="13.11.2017")
 public class Main extends JavaPlugin{
 		
 	// die version.json welche information über  die datenbank datei gibt, muss hier angegeben werden.
@@ -40,6 +43,9 @@ public class Main extends JavaPlugin{
 	public static String PLUGIN_PREFIX = E_Colors.GRAY.toString()+"["+E_Colors.GOLD.toString()+"AAAB"+E_Colors.GRAY.toString()+"]";
 	
 	@Override
+	@Product(type=Types.FUNCTION, name="onEnable")
+	@Creator(createdBy="AtjonTV", createdOn="29.10.2017")
+	@LastEdit(changedBy="AtjonTV", lastChanged="13.11.2017")
 	public void onEnable() {
 		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#------------------------------#");
 		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#    Alt Account Auto Ban v2   #");

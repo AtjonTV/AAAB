@@ -6,11 +6,17 @@ import at.atjontv.minecraft.aaab.Enums.*;
 import at.atjontv.minecraft.aaab.Managers.*;
 import at.atjontv.minecraft.aaab.Objects.O_Version;
 import at.atjontv.minecraft.aaab.Annotations.*;
+import at.atjontv.minecraft.aaab.Annotations.Product.Types;
 
+@Product(type=Types.MODULE, name="Checker")
+@Product(type=Types.CLASS, name="Checker")
 @Creator(createdBy="AtjonTV", createdOn="29.10.2017")
-@LastEdit(changedBy="AtjonTV", lastChanged="09.11.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="13.11.2017")
 public class Checker {
 		
+	@Product(type=Types.FUNCTION, name="Checker")
+	@Creator(createdBy="AtjonTV", createdOn="29.10.2017")
+	@LastEdit(changedBy="AtjonTV", lastChanged="13.11.2017")
 	public Checker(boolean run)
 	{
 		System.out.println("Module 'Checker' in at.atjontv.minecraft.aaab enabled.");
@@ -19,6 +25,9 @@ public class Checker {
 			 DoCheck();
 	}
 	
+	@Product(type=Types.FUNCTION, name="DoCheck")
+	@Creator(createdBy="AtjonTV", createdOn="29.10.2017")
+	@LastEdit(changedBy="AtjonTV", lastChanged="13.11.2017")
 	public boolean DoCheck()
 	{
 		/*

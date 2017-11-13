@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- DO NOT CHANGE THIS LANGUAGE PACK! -->
+<!-- IF YOU FINDE ANY TYPOS REPORT THEM ON THE PROJECT PAGE: http://link.beeit.org/7gvwvd -->
+<Lang>
+	<Lang_Info>
+		<Lang_Name>English</Lang_Name>
+		<Lang_Version>LP-English_1.0</Lang_Version>
+		<Lang_Date>13.11.2017</Lang_Date>
+		<Lang_Author>AtjonTV</Lang_Author>
+	</Lang_Info>
+	<Lang_Elements>
+		<Lang_Element id="0" name="no_permission" value="You don't have permission to do this!"></Lang_Element>
+		<Lang_Element id="1" name="db_update_success" value="Successfully Updated the Database!"></Lang_Element>
+		<Lang_Element id="2" name="db_update_nosuccess" value="Cloud not Update the Database!"></Lang_Element>
+		<Lang_Element id="3" name="db_uptodate" value="The Database is up-to-date!"></Lang_Element>
+		<Lang_Element id="4" name="checking_modules" value="Checking Modules ..."></Lang_Element>
+		<Lang_Element id="5" name="enabled_modules" value="Module '@m' in '@pkg' activated."></Lang_Element>
+		<Lang_Element id="6" name="design_warning" value="This list does not look as good as in the Console"></Lang_Element>
+		<Lang_Element id="7" name="fatal_error_paramnull" value="Fatal error in '@pkg' [Given Parameters are null or empty]!"></Lang_Element>
+		<Lang_Element id="8" name="fatal_error_filenotfound" value="Fatal error in '@pkg' [File could not be found]!"></Lang_Element>
+		<Lang_Element id="9" name="fatal_error_valuenull" value="Fata error in '@pkg' [Value is null oder leer]!"></Lang_Element>
+		<Lang_Element id="10" name="blacklist_found" value="Blacklist Check :: The player @p is on the Blacklist!"></Lang_Element>
+		<Lang_Element id="11" name="blacklist_banned" value="Blacklist Check :: The player @p was Banned!"></Lang_Element>
+	</Lang_Elements>
+</Lang>

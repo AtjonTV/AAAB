@@ -12,10 +12,12 @@ import at.atjontv.minecraft.aaab.Enums.E_FolderFile;
 import at.atjontv.minecraft.aaab.Objects.*;
 import at.atjontv.minecraft.aaab.Objects.O_Version;
 import at.atjontv.minecraft.aaab.Annotations.*;
+import at.atjontv.minecraft.aaab.Annotations.Product.Types;
 import at.atjontv.minecraft.aaab.Annotations.UnderConstruction.Priority;
 
+@Product(type=Types.CLASS, name="M_JSON")
 @Creator(createdBy="AtjonTV", createdOn="29.10.2017")
-@LastEdit(changedBy="AtjonTV", lastChanged="10.11.2017")
+@LastEdit(changedBy="AtjonTV", lastChanged="13.11.2017")
 public class M_JSON {
 
 	public M_JSON()
@@ -23,6 +25,9 @@ public class M_JSON {
 		
 	}
 	
+	@Product(type=Types.FUNCTION, name="makeVersion")
+	@Creator(createdBy="AtjonTV", createdOn="29.10.2017")
+	@LastEdit(changedBy="AtjonTV", lastChanged="13.11.2017")
 	public O_Version makeVersion(String file)
 	{
 		if(!M_FileSystem.Exists(E_FolderFile.FILE, file))
@@ -51,6 +56,9 @@ public class M_JSON {
 	 * Currently Deprecated due to the 'String[][] Json.Manager.getBlacklist(String file)' method 
 	 */
 	@Deprecated
+	@Product(type=Types.FUNCTION, name="makeDatabase")
+	@Creator(createdBy="AtjonTV", createdOn="29.10.2017")
+	@LastEdit(changedBy="AtjonTV", lastChanged="13.11.2017")
 	public O_Database makeDatabase(String file)
 	{
 		if(!M_FileSystem.Exists(E_FolderFile.FILE, file))
@@ -60,6 +68,9 @@ public class M_JSON {
 	
 	@UnderConstruction(priority=Priority.HIGH)
 	@Deprecated
+	@Product(type=Types.FUNCTION, name="makeConfig")
+	@Creator(createdBy="AtjonTV", createdOn="29.10.2017")
+	@LastEdit(changedBy="AtjonTV", lastChanged="13.11.2017")
 	public O_Config makeConfig(String file)
 	{
 		if(!M_FileSystem.Exists(E_FolderFile.FILE, file))
