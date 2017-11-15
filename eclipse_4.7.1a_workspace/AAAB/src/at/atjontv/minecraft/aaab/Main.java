@@ -49,7 +49,7 @@ public class Main extends JavaPlugin{
 	public void onEnable() {
 		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#------------------------------#");
 		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#    Alt Account Auto Ban v2   #");
-		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#   AAAB v2 [v"+this.getDescription().getVersion()+"]   #");
+		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#   AAAB v2 [v"+this.getDescription().getVersion()+"]  #");
 		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"#------------------------------#");
 		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"# AAAB by "+E_Colors.RED.toString()+"AtjonTV"+E_Colors.AQUA.toString()+" and others:  #");
 		Bukkit.getConsoleSender().sendMessage(E_Colors.AQUA.toString()+"# "+E_Colors.RED.toString()+"TheNightRider,               "+E_Colors.AQUA.toString()+"#");

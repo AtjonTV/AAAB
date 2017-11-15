@@ -77,6 +77,10 @@ public class Checker {
 						{
 							M_Download.Download(new_version.getDatabase(), Main.DB_NEWEST);
 						}
+						else if (!M_FileSystem.Exists(E_FolderFile.FILE, Main.DB_NEWEST))
+						{
+							M_Download.Download(new_version.getDatabase(), Main.DB_NEWEST);
+						}
 						else // Otherwise everything is ok and good to go
 						{
 							Main.DB_VERSION_STR = new_version.getVersion();

@@ -17,7 +17,7 @@ public class JsonUtils {
 	{
 		if(!M_FileSystem.Exists(E_FolderFile.FILE, file))
 		{
-			System.err.print("Error in at.thenightrider.json.JsonUtils.java:17 [Given string is empty]");
+			System.err.print("Error in at.thenightrider.json.JsonUtils.java:20 [Given string is empty]");
 			return null;
 		}
 		try
@@ -26,7 +26,7 @@ public class JsonUtils {
 			InputStream in = M_FileSystem.getInputStreamFromFile(file);
 			if(in == null)
 			{
-				System.err.print("Error in at.thenightrider.json.JsonUtils.java:26 [Given filestream is null]");
+				System.err.print("Error in at.thenightrider.json.JsonUtils.java:29 [Given filestream is null]");
 				return null;
 			}
 			scanner = new Scanner(in);
@@ -46,11 +46,11 @@ public class JsonUtils {
 	{
 		if(!M_FileSystem.Exists(E_FolderFile.FILE, file))
 		{
-			System.err.print("Error in at.thenightrider.json.JsonUtils.java:43 [Given file does not exist]");
+			System.err.print("Error in at.thenightrider.json.JsonUtils.java:49 [Given file does not exist]");
 			return null;
 		}
 		if(file == null)
-			System.err.print("Error in at.thenightrider.json.JsonUtils.java:47 [Given string is empty]");
+			System.err.print("Error in at.thenightrider.json.JsonUtils.java:53 [Given string is empty]");
 		else
 			return new JSONObject(getJsonStringFromFile(file));
 		return null;

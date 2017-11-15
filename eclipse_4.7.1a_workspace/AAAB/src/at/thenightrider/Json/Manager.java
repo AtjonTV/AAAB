@@ -17,7 +17,7 @@ public class Manager {
 	{
 		JSONObject objRoot = JsonUtils.getJsonObjectFromFile(file);
 		if(objRoot == null)
-			System.err.print("Error in at.thenightrider.json.Manager.java:16 [Given object is null]");
+			System.err.print("Error in at.thenightrider.json.Manager.java:20 [Given object is null]");
 		else
 		{
 			JSONArray blacklist = (JSONArray) objRoot.get("blacklist");
