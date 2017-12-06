@@ -1,6 +1,14 @@
 # Alt Account Auto-Ban
 News, Description, Documentation and Downloads will be available on: http://atjontv.github.io/AAAB
 
+# Report Bugs or Wishes
+
+You can Report Bugs or add Wishes on our Bugtracker Site:
+
+| URL                               |
+| --------------------------------- |
+| http://bugtracker.atvg-studios.at |
+
 # License
 This Software is Licensed under ATVG-Studios's OSPLv1.1
 [ http://atvg-studios.at/OSPLv1.1 ]
